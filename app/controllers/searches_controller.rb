@@ -5,6 +5,8 @@ class SearchesController < ApplicationController
 
   def new
     @search = Search.new
+    @filmweb_wanna_see_link = 'http://www.filmweb.pl/user/kulpadawid/films/wanna-see'
+    @wanna_see_movies = FilmwebParser.new(@filmweb_wanna_see_link).parse
   end
 
   def create
