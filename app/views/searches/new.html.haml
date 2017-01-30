@@ -1,0 +1,7 @@
+= form_tag :action => 'create' do
+  %p
+    %label{:for => "search_text"}> Movie title
+    \:
+    \#{text_field :search, :text}
+    
+    \#{submit_tag 'Go to vod browser'}
