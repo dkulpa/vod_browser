@@ -1,4 +1,4 @@
-%h1 Wyszukiwarka VOD
+%h1 VOD Browser
 %p= link_to 'Chili TV', "https://pl.chili.tv/cinema/search/#{@movie_to_find.sub('+', ' ')}", target: '_blank'
 %p= link_to 'Cineman', "http://www.cineman.pl/filmy?SearchQuery=#{@movie_to_find}&IsSearching=szukaj", target: '_blank'
 %p= link_to 'MMTV', "https://www.mmtv.pl/FrontOffice/VodIndex.go?token=#{@movie_to_find}", target: '_blank'
