@@ -24,6 +24,8 @@ default: &default
 development:
   <<: *default
   database: vod_browser_development
+  user: dawid
+  password: dawid
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,6 +60,8 @@ development:
 test:
   <<: *default
   database: vod_browser_test
+  user: dawid
+  password: dawid
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -77,9 +81,3 @@ test:
 #
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
-#
-production:
-  <<: *default
-  database: vod_browser_production
-  username: vod_browser
-  password: <%= ENV['VOD_BROWSER_DATABASE_PASSWORD'] %>

@@ -5,3 +5,8 @@
     \#{text_field :search, :text}
     
     \#{submit_tag 'Go to vod browser'}
+
+  - @my_movies_in_cineman.each do |movie|
+    %p
+      = "#{movie.text} +++ "
+      = link_to 'go to Cineman', "http://www.cineman.pl#{movie.attributes["href"].value}", target: '_blank'
