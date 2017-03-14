@@ -1,5 +1,6 @@
 class Movie < ApplicationRecord
-  validates :title, :year, :time, :rating, presence: true
+  validates :time, presence: true
+  validates :year, :title, :rating, presence: true
   validates :year, inclusion: {
     in: 1908..Time.now.year,
     message: 'wrong year'
