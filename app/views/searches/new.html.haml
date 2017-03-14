@@ -1,7 +1,5 @@
-= form_tag action: 'create' do
-  %p
-    %label{for: "search_text"}> Movie title
-    \:
-    \#{text_field :search, :text}
-    
-    \#{submit_tag 'Go to vod browser'}
+%div.input-group
+  = form_tag action: 'create' do
+    = text_field :search, :text, placeholder: "Search Titles", class: 'form-control'
+    %span.input-group-btn
+      = submit_tag "Search", class: 'btn btn-default'

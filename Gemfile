@@ -52,3 +52,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'haml-rails', '~> 0.9.0'
 gem 'decent_exposure', '3.0.0'
+gem 'bootstrap-sass', '~> 3.3.6'
