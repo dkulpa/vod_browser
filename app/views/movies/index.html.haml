@@ -1,0 +1,14 @@
+%table{border: 1}
+  %tbody
+    %tr
+      %td <b>Title</b>
+      %td <b>Year</b>
+      %td <b>Time</b>
+      %td <b>Rating</b>
+
+    - @movies.sort_by(&:rating).reverse.each do |movie|
+      %tr
+        %td= movie.title
+        %td= movie.year
+        %td= movie.time
+        %td= movie.rating

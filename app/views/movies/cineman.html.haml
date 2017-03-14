@@ -1,0 +1,2 @@
+- @cineman_movies.each do |movie|
+  %p= link_to(movie.children.text, "http://cineman.pl/#{movie.attributes['href'].value}", target: '_blank')
